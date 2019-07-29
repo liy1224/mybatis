@@ -48,14 +48,5 @@ public class TestClass {
 		System.out.println(systemRole.getName());
 	}
 	
-	@Test
-	public void testJsonString(){
-	 String str = "我的名字（测试），.。weew/";
-	 String regEx="[\n`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~！@#￥%……&*（）——+|{}【】‘；：”“’。， 、？]";
-		Pattern p = Pattern.compile(regEx);
-		Matcher m = p.matcher(str);
-				
-		 //去除特殊符号后字符串内容：
-		 System.out.println("字符串str：" + m.replaceAll(""));
-	}
+
 }
